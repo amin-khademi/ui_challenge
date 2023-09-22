@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/imageWidget.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/searchWidget.dart';
 
-class mainpage extends StatelessWidget {
-  const mainpage({super.key});
+class Mainpage extends StatelessWidget {
+  const Mainpage({super.key});
 
   @override
   Widget build(BuildContext context) {
