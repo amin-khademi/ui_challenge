@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/imageWidget.dart';
-import 'package:flutter_application_1/dpwallpaper/widgets/searchWidget.dart';
 
 class FavPage extends StatelessWidget {
   @override
@@ -52,9 +51,8 @@ class FavPage extends StatelessWidget {
               "your favorite",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-
           ),
-          Flexible(flex: 1,child: ImageWidget())
+          Flexible(flex: 1, child: ImageWidget())
         ],
       )),
     );
