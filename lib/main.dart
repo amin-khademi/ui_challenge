@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_application_1/circle_phone/circle_phone.dart';
 import 'package:flutter_application_1/dpwallpaper/favPage.dart';
 import 'package:flutter_application_1/dpwallpaper/imagepage.dart';
 import 'package:flutter_application_1/dpwallpaper/mainPage.dart';
 import 'package:flutter_application_1/mainScreen/mainScreen.dart';
+import 'package:flutter_application_1/splash-screen/splash.screen.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   void initState() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     super.initState();
   }
 
@@ -32,11 +32,12 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => const MainScreen(),
+        "/": (context) => const SplashScreen(),
+        "mainScreen": (context) => const MainScreen(),
         "circlePhone": (context) => const CirclePhone(expectedCode: "1234"),
-        "mainpage": (context) => const Mainpage(),
+        "mainpage": (context) => const MainPage(),
         "images": (context) => const ImagePage(),
-        "favpage": (context) => FavPage(),
+        "favpage": (context) => const FavPage(),
       },
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,

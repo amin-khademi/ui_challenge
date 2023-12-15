@@ -10,9 +10,10 @@ class InputModeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: onModeChanged,
-        child: Text((simpleInput ? "Orginal" : "Simlify").toUpperCase(),style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                  fontSize: 20),));
+        child: Text(
+          (simpleInput ? "Orginal" : "Simlify").toUpperCase(),
+          style: const TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
+        ));
   }
 }

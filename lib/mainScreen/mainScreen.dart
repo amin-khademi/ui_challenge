@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/circle_phone/circle_phone.dart';
 import 'package:flutter_application_1/dpwallpaper/mainPage.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -15,21 +15,25 @@ class MainScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+
+            
             GestureDetector(
                 onTap: () {
                   Get.to(
-                    Mainpage(),
+                    const MainPage(),
                   );
                 },
-                child: Icon(Icons.photo_size_select_actual_rounded)),
-                SizedBox(width: 10,),
+                child: const Icon(Icons.photo_size_select_actual_rounded)),
+            const SizedBox(
+              width: 10,
+            ),
             GestureDetector(
                 onTap: () {
                   Get.to(
-                    CirclePhone(expectedCode: "1234"),
+                    const CirclePhone(expectedCode: "1234"),
                   );
                 },
-                child: Icon(Icons.phone))
+                child: const Icon(Icons.phone))
           ],
         ),
       ),

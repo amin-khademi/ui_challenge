@@ -1,9 +1,10 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/imageWidget.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/searchWidget.dart';
 
-class Mainpage extends StatelessWidget {
-  const Mainpage({super.key});
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +15,17 @@ class Mainpage extends StatelessWidget {
               child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 5),
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                margin: const EdgeInsets.only(top: 5),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 height: 60,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.menu,
                       size: 20,
                     ),
-                    Text(
+                    const Text(
                       "DP wallpaper",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -33,7 +34,7 @@ class Mainpage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "favpage");
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.favorite,
                         color: Colors.red,
                         size: 20,
@@ -43,9 +44,9 @@ class Mainpage extends StatelessWidget {
                 ),
               ),
               //search widget
-              SearchWidget(),
+              const SearchWidget(),
               // tab bar
-              TabBar(
+              const TabBar(
                   isScrollable: true,
                   labelColor: Colors.orange,
                   labelStyle:
@@ -73,7 +74,7 @@ class Mainpage extends StatelessWidget {
                     ),
                   ]),
 
-              Flexible(
+              const Flexible(
                   flex: 1,
                   child: TabBarView(
                     children: [

@@ -19,7 +19,7 @@ class ImageWidget extends StatelessWidget {
             for (int i = 1; i < 9; i++)
               GestureDetector(
                 onTap: () {
-                  context.pushTransparentRoute(ImagePage());
+                  context.pushTransparentRoute(const ImagePage());
                 },
                 child: Container(
                   decoration: BoxDecoration(
@@ -30,7 +30,7 @@ class ImageWidget extends StatelessWidget {
                       child: Hero(
                           tag: "$i",
                           child: Image.asset(
-                            "images/$i.jpg",
+                            "assets/images/$i.jpg",
                             fit: BoxFit.cover,
                           ))),
                 ),

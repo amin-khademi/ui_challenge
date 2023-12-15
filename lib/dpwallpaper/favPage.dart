@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/dpwallpaper/widgets/imageWidget.dart';
 
 class FavPage extends StatelessWidget {
+  const FavPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,8 +11,8 @@ class FavPage extends StatelessWidget {
           child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 5),
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            margin: const EdgeInsets.only(top: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             height: 60,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -19,12 +21,12 @@ class FavPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 20,
                   ),
                 ),
-                Text(
+                const Text(
                   "favorite",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
@@ -32,7 +34,7 @@ class FavPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(context, "favPage");
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.favorite,
                     color: Colors.transparent,
                     size: 20,
@@ -45,14 +47,14 @@ class FavPage extends StatelessWidget {
 
           // tab bar
           Container(
-            margin: EdgeInsets.all(15),
+            margin: const EdgeInsets.all(15),
             alignment: Alignment.centerLeft,
-            child: Text(
+            child: const Text(
               "your favorite",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
-          Flexible(flex: 1, child: ImageWidget())
+          const Flexible(flex: 1, child: ImageWidget())
         ],
       )),
     );

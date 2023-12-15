@@ -6,8 +6,8 @@ class SearchWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       height: 55,
       decoration: BoxDecoration(
           color: Colors.white,
@@ -19,7 +19,7 @@ class SearchWidget extends StatelessWidget {
                 blurRadius: 10)
           ]),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        Container(
+        const SizedBox(
           width: 250,
           child: TextField(
             decoration: InputDecoration(
@@ -27,7 +27,7 @@ class SearchWidget extends StatelessWidget {
           ),
         ),
         InkWell(
-          child: Icon(Icons.search),
+          child: const Icon(Icons.search),
           onTap: () {},
         )
       ]),
