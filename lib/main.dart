@@ -6,6 +6,7 @@ import 'package:flutter_application_1/view/dpwallpaper/mainPage.dart';
 import 'package:flutter_application_1/view/mainScreen/mainScreen.dart';
 import 'package:flutter_application_1/view/splash-screen/splash.screen.dart';
 import 'package:get/get.dart';
+import 'package:quick_actions/quick_actions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  
   // This widget is the root of your application.
   @override
   void initState() {
