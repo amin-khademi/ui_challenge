@@ -1,36 +1,49 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
-class SearchWidget extends StatelessWidget {
-  const SearchWidget({super.key});
+class MySearch extends SearchDelegate {
+  List<String> searchResaults = ["temp1", "temp2", "temp3"];
+  @override
+  List<Widget>? buildActions(BuildContext context) => [
+        IconButton(
+            onPressed: () {
+              if (query.isEmpty) {
+                close(context, null);
+              } else {
+                query = "";
+              }
+            },
+            icon: Icon(Icons.clear))
+      ];
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      height: 55,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(30),
-          boxShadow: [
-            BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 2,
-                blurRadius: 10)
-          ]),
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        const SizedBox(
-          width: 250,
-          child: TextField(
-            decoration: InputDecoration(
-                border: InputBorder.none, hintText: "search here..."),
-          ),
-        ),
-        InkWell(
-          child: const Icon(Icons.search),
-          onTap: () {},
-        )
-      ]),
+  Widget? buildLeading(BuildContext context) => IconButton(
+      onPressed: () {
+        close(context, null);
+      },
+      icon: Icon(Icons.arrow_back));
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> suggestions = searchResaults.where((element) {
+      final resault = element.toLowerCase();
+      final input = query.toLowerCase();
+      return resault.contains(input);
+    }).toList();
+    return ListView.builder(
+      itemCount: suggestions.length,
+      itemBuilder: (context, index) {
+        final suggestion = suggestions[index];
+        return ListTile(
+          title: Text(suggestion),
+          onTap: () {
+            query = suggestion;
+          },
+        );
+      },
     );
   }
+
+  @override
+  Widget buildResults(BuildContext context) => Container();
 }

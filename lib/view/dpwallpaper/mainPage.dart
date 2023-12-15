@@ -44,12 +44,21 @@ class MainPage extends StatelessWidget {
                         color: Colors.red,
                         size: 20,
                       ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        showSearch(context: context, delegate: MySearch());
+                      },
+                      child: const Icon(
+                        Icons.search,
+                        size: 20,
+                      ),
                     )
                   ],
                 ),
               ),
               //search widget
-              const SearchWidget(),
+
               // tab bar
               const TabBar(
                   isScrollable: true,
