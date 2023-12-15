@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/circle_phone.dart';
-import 'package:flutter_application_1/dpwallpaper/mainPage.dart';
+import 'package:flutter_application_1/view/circle_phone/circle_phone.dart';
+import 'package:flutter_application_1/view/dpwallpaper/mainPage.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 

@@ -1,11 +1,11 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/passcode/passcode_digit.dart';
+import 'package:flutter_application_1/view/circle_phone/passcode/passcode_digit.dart';
 // import 'package:flutter_application_1/circle_phone/passcode/passcode_digit.dart';
-import 'package:flutter_application_1/circle_phone/rotary_dial/rotary_dial_input.dart';
-import 'package:flutter_application_1/circle_phone/widgets/input_mode_button.dart';
-import 'package:flutter_application_1/circle_phone/passcode/pass_code_input.dart';
+import 'package:flutter_application_1/view/circle_phone/rotary_dial/rotary_dial_input.dart';
+import 'package:flutter_application_1/view/circle_phone/widgets/input_mode_button.dart';
+import 'package:flutter_application_1/view/circle_phone/passcode/pass_code_input.dart';
 
 class CirclePhone extends StatefulWidget {
   const CirclePhone({super.key, required this.expectedCode});

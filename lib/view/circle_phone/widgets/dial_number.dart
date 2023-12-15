@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/constants/constants.dart';
+import 'package:flutter_application_1/view/circle_phone/constants/constants.dart';
 
 class DialNumber extends StatelessWidget {
   const DialNumber({super.key, required this.number});

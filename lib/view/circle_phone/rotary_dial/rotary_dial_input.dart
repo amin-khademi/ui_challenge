@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/constants/constants.dart';
-import 'package:flutter_application_1/circle_phone/rotary_dial/rotary_dial_background.dart';
-import 'package:flutter_application_1/circle_phone/rotary_dial/rotary_dial_forground.dart';
-import 'package:flutter_application_1/circle_phone/widgets/dial_number.dart';
+import 'package:flutter_application_1/view/circle_phone/constants/constants.dart';
+import 'package:flutter_application_1/view/circle_phone/rotary_dial/rotary_dial_background.dart';
+import 'package:flutter_application_1/view/circle_phone/rotary_dial/rotary_dial_forground.dart';
+import 'package:flutter_application_1/view/circle_phone/widgets/dial_number.dart';
 
 class RotaryDialInput extends StatelessWidget {
   const RotaryDialInput({super.key});

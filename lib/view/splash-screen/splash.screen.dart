@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/mainScreen/mainScreen.dart';
+import 'package:flutter_application_1/view/mainScreen/mainScreen.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 

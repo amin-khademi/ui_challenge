@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/utils.dart';
+import 'package:flutter_application_1/view/circle_phone/utils.dart';
 
 const _passcodedigitPadding = 8.0;
 const _passcodedigitSizeBig = 36.0;

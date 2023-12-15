@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/constants/constants.dart';
-import 'package:flutter_application_1/circle_phone/utils.dart';
+import 'package:flutter_application_1/view/circle_phone/constants/constants.dart';
+import 'package:flutter_application_1/view/circle_phone/utils.dart';
 import 'dart:math' as math;
 
 class RotaryDialBackGroungpainter extends CustomPainter {

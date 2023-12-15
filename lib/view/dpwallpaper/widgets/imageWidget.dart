@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/dpwallpaper/imagepage.dart';
+import 'package:flutter_application_1/view/dpwallpaper/imagepage.dart';
 import 'package:dismissible_page/dismissible_page.dart';
 
 class ImageWidget extends StatelessWidget {

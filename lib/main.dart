@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/circle_phone/circle_phone.dart';
-import 'package:flutter_application_1/dpwallpaper/favPage.dart';
-import 'package:flutter_application_1/dpwallpaper/imagepage.dart';
-import 'package:flutter_application_1/dpwallpaper/mainPage.dart';
-import 'package:flutter_application_1/mainScreen/mainScreen.dart';
-import 'package:flutter_application_1/splash-screen/splash.screen.dart';
+import 'package:flutter_application_1/view/circle_phone/circle_phone.dart';
+import 'package:flutter_application_1/view/dpwallpaper/favPage.dart';
+import 'package:flutter_application_1/view/dpwallpaper/imagepage.dart';
+import 'package:flutter_application_1/view/dpwallpaper/mainPage.dart';
+import 'package:flutter_application_1/view/mainScreen/mainScreen.dart';
+import 'package:flutter_application_1/view/splash-screen/splash.screen.dart';
 import 'package:get/get.dart';
 
 void main() {
