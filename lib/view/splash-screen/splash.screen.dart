@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Colors.amber.shade100,
       body: Center(
-        child: Lottie.asset("assets/ui.json"
+        child: Lottie.asset("assets/lottie/ui.json"
         ))
     );
   }
