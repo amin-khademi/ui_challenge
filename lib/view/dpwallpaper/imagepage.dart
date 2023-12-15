@@ -21,7 +21,7 @@ class ImagePage extends StatelessWidget {
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "images/7.jpg",
+                      "assets/images/7.jpg",
                     ),
                     fit: BoxFit.cover)),
             child: Container(

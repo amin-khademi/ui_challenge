@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/view/dpwallpaper/widgets/imageWidget.dart';
 import 'package:flutter_application_1/view/dpwallpaper/widgets/searchWidget.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -9,10 +9,10 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 6,
-        child: Scaffold(
-          body: SafeArea(
-              child: Column(
+      length: 6,
+      child: Scaffold(
+        body: SafeArea(
+          child: Column(
             children: [
               Container(
                 margin: const EdgeInsets.only(top: 5),
@@ -21,9 +21,14 @@ class MainPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Icon(
-                      Icons.menu,
-                      size: 20,
+                    GestureDetector(
+                      onTap: () {
+                        Get.back();
+                      },
+                      child: const Icon(
+                        Icons.arrow_back,
+                        size: 20,
+                      ),
                     ),
                     const Text(
                       "DP wallpaper",
@@ -87,7 +92,9 @@ class MainPage extends StatelessWidget {
                     ],
                   ))
             ],
-          )),
-        ));
+          ),
+        ),
+      ),
+    );
   }
 }
